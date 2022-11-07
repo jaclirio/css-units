@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>CSS Units</title>
+</head>
+<body>
+    <div class="box fifty-percent">50%</div>
+    <div class="box one-hundred-pixels">100px</div>
+    <div class="box fifty-vw">50vw</div>
+    <div class="box twenty-five-vh">25vh</div>
+    <hr>
+    <div class="parent">
+        <div class="box fifty-percent">50%</div>
+        <div class="box one-hundred-pixels">100px</div>
+        <div class="box fifty-vw">50vw</div>
+        <div class="box twenty-five-vh">25vh</div>
+    </div>
+    <hr>
+    <div class="one-rem">1rem</div> 
+    <div class="one-em">1em</div> <!-- Same root (body). Same size as em -->
+    <div class="two-rem">2rem</div>
+    <div class="two-em">2em</div>
+    <div class="parent1">
+        <div class="one-rem">1rem</div> <!-- Still the same -->
+        <div class="one-em">1em</div> <!-- 100% of the parent font size (30px) -->
+        <div class="two-rem">2rem</div> <!-- Double of 1rem, default size from browser -->
+        <div class="two-em">2em</div> <!-- Twice of 1em, 60px -->
+    </div> <!-- Use rem for font size, get size from default browser -->
+    <hr>
+    <div class="icon-container">
+        <div class="icon em-icon"></div>
+        <span class="icon-text">1em icon</span>
+    </div>
+    <div class="icon-container">
+        <div class="icon rem-icon"></div>
+        <span class="icon-text">1rem icon</span>
+    </div>
+    <div class="icon-container large">
+        <div class="icon em-icon"></div>
+        <span class="icon-text">1em icon</span>
+    </div>
+    <div class="icon-container large">
+        <div class="icon rem-icon"></div>
+        <span class="icon-text">1rem icon</span>
+    </div> <!-- Use em for icon. Will scale as font size grows.-->
+    <hr>
+    <div class="two-rem">2rem</div>
+    <div class="two-em">2em</div>
+    <div class="two-hundred-percent">200%</div>
+    <hr>
+    <div class="parent1">
+        <div class="two-rem">2rem</div>
+        <div class="two-em">2em</div>
+        <div class="two-hundred-percent">200%</div>
+    </div>
+</body>
+</html>
